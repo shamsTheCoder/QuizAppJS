@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Quiz</title>
+    <link rel="stylesheet" href="/css/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body style="background-color: #37474f;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark  bg-dark">
+        <a class="navbar-brand text-primary" href="#">Quiz Mania</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto text-light">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/html/game.html">Start Quiz <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/html/highScore.html">High Score <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/shamsTheCoder/QuizAppJS.git"><i
+                            class="fab fa-github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h1 class="text-center mt-4 text-light">Quiz in progress...</h1> <hr>
+        <div class="container w-50 mt-4 border" id="quizPannel">
+            <div class="head">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 mt-4">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 mt-4 text-light">
+                        <h5 class="text-light text-center">Score: 0</h5>
+                    </div>
+                </div>
+            </div> <hr>
+            <h5 class="text-light" id="question">Which is the capital of Bihar?</h5>
+            <div class="bottom ">
+                <div class="choice-container">
+                    <p class="choice-prefix" data-number="1">A</p>
+                    <p class="choice-text">Patna</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix" data-number="2">B</p>
+                    <p class="choice-text">Darbhanga</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix" data-number="3">C</p>
+                    <p class="choice-text">Mumbai</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix" data-number="4">D</p>
+                    <p class="choice-text">Bhagalpur</p>
+                </div>
+            </div>
+            <hr>
+            <div id="btnGroup " class="d-flex justify-content-center">
+                <button class="btn btn-sm btn-outline-light mr-4 mb-4"><i class="fas fa-angle-left"></i> Previous</button>
+                <button class="btn btn-sm btn-outline-light ml-4 mb-4">Next <i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

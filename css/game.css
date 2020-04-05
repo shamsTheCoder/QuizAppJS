@@ -1,0 +1,33 @@
+#quizPannel{
+    background-color: #455a64;
+    border-radius: 7px;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem rgba(86, 165, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+
+}
+
+.choice-prefix{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 20px;
+    background-color: #56a5eb;
+    color: #ffffff;
+}
+
+.choice-text{
+    padding:0 10px;
+    margin-top: 10px;
+}
